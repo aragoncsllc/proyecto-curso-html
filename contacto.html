@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> 
+    <link rel="stylesheet" href="/styles/contacto.css">
+    <title>MSA Cargo</title>
+</head>
+<body>
+
+    <header>
+        <h1>MSA Cargo | Forward Services</h1>
+        <nav>
+            <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="audiovisuales.html">Audiovisuales</a></li>
+            <li><a class="active"  href="contacto.html">Contacto</a></li>
+        </ul>
+        </nav>
+    </header>
+
+    <div class="contenedor-formulario">
+        <form>
+            <label for="nombre">Nombre: </label>
+            <input type="text" id="nombre" name="nombre" placeholder="Escribir aqui el nombre" required minlength="3">
+            <label for="apelido">Apellido: </label>
+            <input type="text" id="apellido" name="apellido" placeholder="Escribir aqui el apellido" required minlength="3">
+            <label for="mail">Email: </label>
+            <input type="email" id="mail" name="mail" placeholder="Escribir aqui el correo" required>
+            <label for="pais">País: </label>
+            <select name="pais" id="pais">
+            <option value="Argentina">Argentina</option>
+            <option value="Chile">Chile</option>
+            <option value="Bolivia">Bolivia</option>
+            <option value="Perú ">Perú </option>
+            <option value="Uruguay">Uruguay</option>
+            <option value="España">España</option>
+            <option value="Colombia">Colombia</option>
+            <option value="Venezuela">Venezuela</option>
+            <option value="Paraguay">Paraguay</option>
+            <option value="Ecuador">Ecuador</option>
+        </select>
+        <label for="comentario">Comentario: </label>
+        <textarea name="comentario" id="comentario" placeholder="Escribir tu comentario"></textarea>
+
+        <label for="motivo">Motivo del contacto: </label>
+        <input type="radio" id="motivo" name="motivo"><i>Solicitud de contrato</i>
+        <input type="radio" id="motivo" name="motivo"><i>Ofertas de los servicios</i>
+        <input type="radio" id="motivo" name="motivo"><i>Reclamos</i>
+        <input type="radio" id="motivo" name="motivo"><i>Otros</i>
+
+<input type="submit" value="Enviar">
+
+        </form>
+
+    </div>
+   
+
+    <footer class="footer">
+        <p>Created by Aragon Computer Service LLC ® 2024</p>
+    </footer>
+</body>
+</html>
